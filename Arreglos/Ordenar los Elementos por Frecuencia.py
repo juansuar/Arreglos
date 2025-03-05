@@ -10,13 +10,13 @@ def frequencySort(nums):
             unique_nums.append(num)
             frequencies.append(1)
 
-    # Crear una lista con pares (número, frecuencia)
+    
     pairs = [(num, freq) for num, freq in zip(unique_nums, frequencies)]
 
-    # Ordenar por frecuencia descendente y mantener el orden relativo
+
     pairs.sort(key=lambda x: (-x[1], nums.index(x[0])))
 
-    # Construir el resultado ordenado
+
     result = []
     for num, freq in pairs:
         result.extend([num] * freq)
