@@ -30,5 +30,5 @@ def frequencySort(nums):
     print("1 aparece 1 vez.")
     print("Se colocan en orden de frecuencia descendente, manteniendo el orden relativo en caso de empate.")
 
-# Ejemplo de uso
+
 frequencySort([4,3,1,6,3,4,4,6])
