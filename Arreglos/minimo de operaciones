@@ -1,0 +1,30 @@
+def minOperations(boxes: str):
+    n = len(boxes)
+    answer = [0] * n
+    count = 0
+    moves = 0
+
+
+    for i in range(n):
+        answer[i] = moves
+        count += int(boxes[i])
+        moves += count
+
+    count = 0
+    moves = 0
+
+    
+    for i in range(n - 1, -1, -1):
+        answer[i] += moves
+        count += int(boxes[i])
+        moves += count
+
+    print("Salida:", answer)
+    print("Explicación: La respuesta para cada casilla es la siguiente:")
+    for i in range(n):
+        print(f"{i+1}) Caja {i}: Se necesitan {answer[i]} operaciones para mover todas las bolas aquí.")
+
+
+print("Entrada: cajas = '110'")
+minOperations("110")
+
