@@ -16,5 +16,5 @@ def findMatrix(nums):
         print("-", row)
     print("Se utilizaron todos los elementos de nums y cada fila de la matriz 2D contiene números enteros distintos, por lo que es una respuesta válida.")
 
-# Ejemplo de uso
+
 findMatrix([1,3,4,1,2,3,1])
